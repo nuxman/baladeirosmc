@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baladeiros Filhos do Beradão MC</title>
+  <meta name="description" content="Site oficial do Baladeiros Filhos do Beradão MC — Rondônia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <img src="./assets/logo.png" alt="Brasão Baladeiros Filhos do Beradão MC" class="logo" />
+      <div class="titleblock">
+        <h1>Baladeiros <span>Filhos do Beradão</span> MC</h1>
+        <p class="subtitle">Rondônia • <em>Teko Karaieté, Teko Irundy</em></p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="#sobre">Quem somos</a>
+      <a href="#estatuto">Estatuto</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="sobre" class="section">
+      <div class="container two-cols">
+        <div>
+          <h2>Quem somos</h2>
+          <p>
+            O Baladeiros Filhos do Beradão MC é um moto clube de <strong>motos custom</strong>,
+            nascido em Porto Velho – Rondônia, com identidade amazônica e espírito beradeiro.
+            “Baladeiros” une a <strong>baladeira</strong> (estilingue) — símbolo ribeirinho —
+            e a alegria das <strong>baladas</strong>, traduzindo nosso jeito de rodar e confraternizar.
+          </p>
+          <ul class="bullets">
+            <li>Honra e irmandade — <em>Teko Karaieté, Teko Irundy</em>.</li>
+            <li>Respeito à estrada, à natureza e às pessoas.</li>
+            <li>Viagens, encontros e amizade acima de qualquer rótulo.</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Cores & Identidade</h3>
+          <p><span class="dot dot--green"></span> Verde-escuro</p>
+          <p><span class="dot dot--brown"></span> Marrom</p>
+          <p><span class="dot dot--white"></span> Branco</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="estatuto" class="section alt">
+      <div class="container">
+        <h2>Estatuto (versão simples)</h2>
+        <div class="cards">
+          <div class="card">
+            <h4>Objetivo</h4>
+            <p>Unir amantes de motos custom, fortalecer a cultura amazônica e celebrar a amizade.</p>
+          </div>
+          <div class="card">
+            <h4>Princípios</h4>
+            <ul>
+              <li>Honra e irmandade.</li>
+              <li>Respeito e liberdade com responsabilidade.</li>
+              <li>Alegria nos encontros e nas estradas.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Estrutura</h4>
+            <p>Presidente, Vice, Tesoureiro, Secretário e Membros — com voz e voto.</p>
+          </div>
+          <div class="card">
+            <h4>Patch</h4>
+            <p>Uso exclusivo de membros ativos. Símbolo de pertencimento e responsabilidade.</p>
+          </div>
+        </div>
+        <p class="note">Quer ver o estatuto completo? <a href="#contato">Fale com a diretoria</a>.</p>
+      </div>
+    </section>
+
+    <section id="eventos" class="section">
+      <div class="container">
+        <h2>Eventos</h2>
+        <p>Em breve: calendário de rolês, encontros e ações sociais.</p>
+        <div class="event-grid">
+          <div class="event-skeleton">Evento #1</div>
+          <div class="event-skeleton">Evento #2</div>
+          <div class="event-skeleton">Evento #3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section alt">
+      <div class="container two-cols">
+        <div>
+          <h2>Contato</h2>
+          <p>Quer falar com a gente, participar de um rolê ou trocar uma ideia?</p>
+          <p>Envie e-mail para <a href="mailto:contato@baladeirosmc.com.br">contato@baladeirosmc.com.br</a></p>
+        </div>
+        <form class="card form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
+          <label>Seu nome
+            <input type="text" placeholder="Seu nome" required>
+          </label>
+          <label>Seu e-mail
+            <input type="email" placeholder="nome@exemplo.com" required>
+          </label>
+          <label>Mensagem
+            <textarea rows="4" placeholder="Escreva sua mensagem"></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Baladeiros Filhos do Beradão MC — Rondônia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
