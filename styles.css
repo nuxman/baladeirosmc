@@ -25,7 +25,8 @@ html,body{
 
 .header{background:var(--green);color:var(--white);padding:28px 0;}
 .header__inner{display:flex;align-items:center;gap:20px;}
-.logo{width:120px;height:auto;border-radius:8px;box-shadow:0 6px 14px rgba(0,0,0,.25);background:var(--cream);}
+.logo{width:96px;height:auto;border-radius:8px;box-shadow:0 6px 14px rgba(0,0,0,.25);background:var(--cream);}
+@media (max-width:600px){ .logo{ width:84px; } }
 .titleblock h1{font-family:Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:42px;letter-spacing:.5px;margin:0;}
 .titleblock h1 span{color:var(--brown);}
 .subtitle{opacity:.9;margin:.25rem 0 0}
@@ -130,4 +131,21 @@ input:focus-visible, textarea:focus-visible{
 @media (max-width: 600px){
   .titleblock h1 { font-size: 32px; }
   h2 { font-size: 28px; }
+}
+/* Card de identidade com imagem ao invés de bolinhas */
+.card--identity { padding: 12px; display: flex; align-items: center; justify-content: center; }
+.identity { margin: 0; width: 100%; text-align: center; }
+.identity img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  /* como seu logo tem fundo preto, um leve contorno ajuda a destacar sobre fundo branco */
+  box-shadow: 0 0 0 2px rgba(0,0,0,.08), 0 10px 24px rgba(0,0,0,.08);
+}
+.identity figcaption {
+  font-size: .9rem;
+  opacity: .8;
+  margin-top: 8px;
 }
