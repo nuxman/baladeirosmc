@@ -135,20 +135,6 @@ input:focus-visible, textarea:focus-visible{
 /* Card de identidade com imagem ao invés de bolinhas */
 .card--identity { padding: 12px; display: flex; align-items: center; justify-content: center; }
 .identity { margin: 0; width: 100%; text-align: center; }
-.identity img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-  /* como seu logo tem fundo preto, um leve contorno ajuda a destacar sobre fundo branco */
-  box-shadow: 0 0 0 2px rgba(0,0,0,.08), 0 10px 24px rgba(0,0,0,.08);
-}
-.identity figcaption {
-  font-size: .9rem;
-  opacity: .8;
-  margin-top: 8px;
-}
 /* Vídeo 3:2 empilhado acima da imagem no card */
 .identity-media{
   width: 100%;
@@ -183,12 +169,4 @@ input:focus-visible, textarea:focus-visible{
 }
 .palette-strip--sm{ height: 12px; margin-top: 8px; }
 
-/* Ajuste visual do logo dentro do card (já existia, só garantindo) */
-.identity img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 0 0 2px rgba(0,0,0,.08), 0 10px 24px rgba(0,0,0,.08);
-}
+
