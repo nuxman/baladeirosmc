@@ -78,6 +78,20 @@
           </ul>
         </div>
         <aside class="card card--identity">
+           <!-- Vídeo 3:2 -->
+          <div class="identity-media">
+            <video
+              class="identity-video"
+              src="assets/teaser.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="assets/logo-bfb.png">
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
+          <!-- Logo + legendinha + barrinha de cores -->
           <figure class="identity">
             <picture>
               <!-- Primeiro tenta carregar a versão WebP -->
@@ -85,7 +99,10 @@
               <!-- Se não suportar WebP, carrega o PNG -->
               <img src="./assets/logo.png" alt="Identidade visual Baladeiros (cores oficiais)">
             </picture>
-            <figcaption>Identidade visual • Verde-escuro • Marrom • Branco</figcaption>
+            <figcaption>Identidade visual • Verde-escuro • Marrom • Branco</figcaption>          
+            <!-- Barrinha compacta com as 3 cores -->
+            <div class="palette-strip palette-strip--sm"
+                aria-label="Cores oficiais: verde-escuro, marrom e branco"></div>
           </figure>
         </aside>
       </div>
