@@ -149,3 +149,46 @@ input:focus-visible, textarea:focus-visible{
   opacity: .8;
   margin-top: 8px;
 }
+/* Vídeo 3:2 empilhado acima da imagem no card */
+.identity-media{
+  width: 100%;
+  aspect-ratio: 3 / 2;     /* força 3:2 */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  margin-bottom: 12px;
+}
+.identity-video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;        /* preenche sem distorcer */
+}
+
+/* Barrinha compacta com as 3 cores */
+.palette-strip{
+  width: 100%;
+  border: 1px solid var(--green-700);
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.06);
+  background:
+    linear-gradient(to right,
+      var(--green) 0%,
+      var(--green) 33.333%,
+      var(--brown) 33.333%,
+      var(--brown) 66.666%,
+      var(--white) 66.666%,
+      var(--white) 100%);
+}
+.palette-strip--sm{ height: 12px; margin-top: 8px; }
+
+/* Ajuste visual do logo dentro do card (já existia, só garantindo) */
+.identity img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.08), 0 10px 24px rgba(0,0,0,.08);
+}
