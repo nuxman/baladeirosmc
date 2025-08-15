@@ -9,7 +9,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Baladeiros Filhos do Beradão MC" />
   <meta property="og:description" content="Moto Clube de Rondônia com identidade amazônica e espírito beradeiro. Honra, irmandade e amizade nas estradas." />
-  <meta property="og:image" content="./assets/logo.png" />
+  <meta property="og:image" content="./assets/logo-bfb.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.baladeirosmc.com.br" />
 
@@ -22,7 +22,11 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <img src="./assets/logo.png" alt="Brasão Baladeiros Filhos do Beradão MC" class="logo" />
+      <picture>
+         <source srcset="./assets/logo-bfb.webp" type="image/webp">
+         <img src="./assets/logo-bfb.png" alt="Brasão Baladeiros Filhos do Beradão MC" class="logo" />
+      </picture>
+
       <div class="titleblock">
         <h1>Baladeiros <span>Filhos do Beradão</span> MC</h1>
         <p class="subtitle">Rondônia • <em>Teko Karaieté, Teko Irundy</em></p>
@@ -43,13 +47,7 @@
     <section id="sobre" class="section">
       <div class="container two-cols">
         <div>
-          <h2>Quem somos</h2>
-          <p>
-            O Baladeiros Filhos do Beradão MC é um moto clube de <strong>motos custom</strong>,
-            nascido em Porto Velho – Rondônia, com identidade amazônica e espírito beradeiro.
-            “Baladeiros” une a <strong>baladeira</strong> (estilingue) — símbolo ribeirinho —
-            e a alegria das <strong>baladas</strong>, traduzindo nosso jeito de rodar e confraternizar.
-          </p>
+          <h2>Quem somos</h2>         
           <p>
             <strong>BALADEIROS MC – Os Filhos do Beradão</strong> é um moto clube criado em Porto Velho – Rondônia, com uma identidade amazônica e o espírito “Beradero”.
             O nome “Baladeiros” deriva da palavra baladeira, o mesmo que estilingue, bodoque, funda ou atiradeira.
@@ -75,11 +73,16 @@
             <li>Viagens, encontros e amizade acima de qualquer rótulo.</li>
           </ul>
         </div>
-        <aside class="card">
-          <h3>Cores & Identidade</h3>
-          <p><span class="dot dot--green"></span> Verde-escuro</p>
-          <p><span class="dot dot--brown"></span> Marrom</p>
-          <p><span class="dot dot--white"></span> Branco</p>
+        <aside class="card card--identity">
+          <figure class="identity">
+            <picture>
+              <!-- Primeiro tenta carregar a versão WebP -->
+              <source srcset="./assets/logo.webp" type="image/webp">
+              <!-- Se não suportar WebP, carrega o PNG -->
+              <img src="./assets/logo.png" alt="Identidade visual Baladeiros (cores oficiais)">
+            </picture>
+            <figcaption>Identidade visual • Verde-escuro • Marrom • Branco</figcaption>
+          </figure>
         </aside>
       </div>
     </section>
