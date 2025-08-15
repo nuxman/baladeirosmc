@@ -133,8 +133,17 @@ input:focus-visible, textarea:focus-visible{
   h2 { font-size: 28px; }
 }
 /* Card de identidade com imagem ao invés de bolinhas */
-.card--identity { padding: 12px; display: flex; align-items: center; justify-content: center; }
-.identity { margin: 0; width: 100%; text-align: center; }
+/* .card--identity { padding: 12px; display: flex; align-items: center; justify-content: center; } */
+/* Card da coluna direita: empilha conteúdo (vídeo em cima, barra embaixo) */
+.card--identity{
+  display: grid;                  /* evita “lado a lado” acidental */
+  grid-auto-flow: row;
+  row-gap: 12px;
+  align-content: start;
+  justify-items: stretch;
+  padding: 12px;
+}
+.identity { margin: 0; width: 100%; text-align: center; } 
 /* Vídeo 3:2 empilhado acima da imagem no card */
 .identity-media{
   width: 100%;
@@ -152,21 +161,17 @@ input:focus-visible, textarea:focus-visible{
   object-fit: cover;        /* preenche sem distorcer */
 }
 
-/* Barrinha compacta com as 3 cores */
+/* Barrinha de cores sempre abaixo do vídeo e ocupando toda a largura */
 .palette-strip{
+  display: block;
   width: 100%;
   border: 1px solid var(--green-700);
   border-radius: 10px;
   box-shadow: 0 6px 14px rgba(0,0,0,.06);
-  background:
-    linear-gradient(to right,
-      var(--green) 0%,
-      var(--green) 33.333%,
-      var(--brown) 33.333%,
-      var(--brown) 66.666%,
-      var(--white) 66.666%,
-      var(--white) 100%);
+  background: linear-gradient(90deg,
+    var(--green) 0%, var(--green) 33.333%,
+    var(--brown) 33.333%, var(--brown) 66.666%,
+    var(--white) 66.666%, var(--white) 100%);
 }
-.palette-strip--sm{ height: 12px; margin-top: 8px; }
-
+.palette-strip--sm{ height: 12px; }
 
