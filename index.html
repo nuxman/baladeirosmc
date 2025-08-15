@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baladeiros Filhos do Beradão MC</title>
-  <meta name="description" content="Site oficial do Baladeiros Filhos do Beradão MC — Rondônia" />
+  <title>Baladeiros Filhos do Beradão MC - Moto Clube em Rondônia</title>
+  <meta name="description" content="Site oficial do Baladeiros Filhos do Beradão MC — Moto Clube de Rondônia com identidade amazônica e espírito beradeiro." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Baladeiros Filhos do Beradão MC" />
+  <meta property="og:description" content="Moto Clube de Rondônia com identidade amazônica e espírito beradeiro. Honra, irmandade e amizade nas estradas." />
+  <meta property="og:image" content="./assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.baladeirosmc.com.br" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -21,7 +30,7 @@
     </div>
   </header>
 
-  <nav class="nav">
+  <nav class="nav" aria-label="Menu principal">
     <div class="container nav__inner">
       <a href="#sobre">Quem somos</a>
       <a href="#estatuto">Estatuto</a>
@@ -40,6 +49,25 @@
             nascido em Porto Velho – Rondônia, com identidade amazônica e espírito beradeiro.
             “Baladeiros” une a <strong>baladeira</strong> (estilingue) — símbolo ribeirinho —
             e a alegria das <strong>baladas</strong>, traduzindo nosso jeito de rodar e confraternizar.
+          </p>
+          <p>
+            <strong>BALADEIROS MC – Os Filhos do Beradão</strong> é um moto clube criado em Porto Velho – Rondônia, com uma identidade amazônica e o espírito “Beradero”.
+            O nome “Baladeiros” deriva da palavra baladeira, o mesmo que estilingue, bodoque, funda ou atiradeira.
+            A baladeira sempre esteve presente na vida de muitos nortistas — é um brinquedo, mas também pode ser uma “arma de caça”.
+            Quem as usa é chamado de baladeiro, para nós, um símbolo cheio de representatividade, pertencimento e memórias.
+          </p>
+          <p>
+            Outra interpretação para “baladeiros” vem da palavra balada (festa), ou seja, aqueles que gostam de festas.
+            O duplo sentido se ajustou perfeitamente, traduzindo nosso jeito de rodar e confraternizar.
+            A expressão “beradão” vem de “beira de rio”, e “Filhos do Beradão” é uma analogia parodiada de uma série famosa,
+            adaptada ao nosso regionalismo, revelando nosso jeito satírico, leve e alegre.
+          </p>
+          <p>
+            Nossos princípios se baseiam em <strong>liberdade, responsabilidade e respeito</strong>.
+            Nosso objetivo é unir amantes de motos, fortalecer a cultura amazônica e celebrar a amizade.
+            Como filosofia, acreditamos na honra, irmandade, pertencimento, identidade, respeito à estrada, à natureza,
+            às culturas e às pessoas. Valorizamos as viagens, encontros e amizade acima de qualquer rótulo.
+            “<em>Teko Karaieté, Teko Irundy</em>” em tupi-guarani resume bem isso.
           </p>
           <ul class="bullets">
             <li>Honra e irmandade — <em>Teko Karaieté, Teko Irundy</em>.</li>
@@ -105,14 +133,14 @@
           <p>Envie e-mail para <a href="mailto:contato@baladeirosmc.com.br">contato@baladeirosmc.com.br</a></p>
         </div>
         <form class="card form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
-          <label>Seu nome
-            <input type="text" placeholder="Seu nome" required>
+          <label for="nome">Seu nome
+            <input id="nome" type="text" name="nome" placeholder="Seu nome" required>
           </label>
-          <label>Seu e-mail
-            <input type="email" placeholder="nome@exemplo.com" required>
+          <label for="email">Seu e-mail
+            <input id="email" type="email" name="email" placeholder="nome@exemplo.com" required>
           </label>
-          <label>Mensagem
-            <textarea rows="4" placeholder="Escreva sua mensagem"></textarea>
+          <label for="mensagem">Mensagem
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
           </label>
           <button type="submit">Enviar</button>
         </form>
@@ -127,7 +155,9 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
   </script>
 </body>
 </html>
