@@ -23,7 +23,7 @@ html,body{
 
 .container{max-width:1100px;margin:0 auto;padding:0 20px;}
 
-.header{background:var(--green);color:var(--white);padding:28px 0;}
+.header{background: #0b1a16;color:var(--white);padding:28px 0;}
 .header__inner{display:flex;align-items:center;gap:20px;}
 .logo{width:96px;height:auto;border-radius:8px;box-shadow:none;background:transparent;}
 @media (max-width:600px){ .logo{ width:84px; } }
@@ -31,7 +31,7 @@ html,body{
 .titleblock h1 span{color:var(--brown);}
 .subtitle{opacity:.9;margin:.25rem 0 0}
 
-.nav{background:var(--green-700);}
+.nav{background:#111;}
 .nav__inner{display:flex;gap:18px;padding:10px 0;flex-wrap:wrap}
 .nav a{
   color:var(--white);
