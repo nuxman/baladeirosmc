@@ -50,6 +50,22 @@ html,body{
 .notes strong {
   color: #3a3a3a;
 }
+#cores {
+  background: #ffffff;
+  border-top: 4px solid var(--green);
+  border-bottom: 4px solid var(--brown);
+}
+
+#escudo {
+  background: var(--cream);
+}
+
+#escudo h2, #cores h2 {
+  font-family: Anton, Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 @media (max-width:600px){ .logo{ width:84px; } }
 .titleblock h1{font-family:Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:42px;letter-spacing:.5px;margin:0;}
 .titleblock h1 span{color:var(--brown);}
