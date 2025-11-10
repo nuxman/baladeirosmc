@@ -25,7 +25,14 @@ html,body{
 
 .header{background: #0b1a16;color:var(--white);padding:28px 0;}
 .header__inner{display:flex;align-items:center;gap:20px;}
-.logo{width:96px;height:auto;border-radius:8px;box-shadow:none;background:transparent;}
+.logo {
+  width: 180px;         /* Aumenta o tamanho do logo (antes 96px) */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;
+  background: transparent;
+  object-fit: contain;  /* Garante proporção correta */
+}
 @media (max-width:600px){ .logo{ width:84px; } }
 .titleblock h1{font-family:Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:42px;letter-spacing:.5px;margin:0;}
 .titleblock h1 span{color:var(--brown);}
