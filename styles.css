@@ -33,6 +33,23 @@ html,body{
   background: transparent;
   object-fit: contain;  /* Garante proporção correta */
 }
+.notes {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #4b6043; /* verde-escuro */
+  background-color: #f7f5f0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.notes em {
+  font-style: italic;
+}
+
+.notes strong {
+  color: #3a3a3a;
+}
 @media (max-width:600px){ .logo{ width:84px; } }
 .titleblock h1{font-family:Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:42px;letter-spacing:.5px;margin:0;}
 .titleblock h1 span{color:var(--brown);}
